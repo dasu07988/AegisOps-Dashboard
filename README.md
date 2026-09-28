@@ -11,7 +11,7 @@ AegisOps AI connects AWS monitoring, AI-powered investigation, knowledge retriev
 
 **Live Dashboard:** [AegisOps AI](https://main.d289vrijhfwvab.amplifyapp.com)
 
-**Incident API:** [AegisOps Incident API](https://eb0fdpju28.execute-api.eu-north-1.amazonaws.com)
+**Incident API:** [AegisOps Incident API](https://eb0fdpju28.execute-api.eu-north-1.amazonaws.com/incidents )
 
 ---
 
@@ -337,7 +337,8 @@ Interests:
 
 ## 📄 License
 
-Add the license that applies to this repository.
+This project is licensed under the MIT License.
+See the [LICENSE](LICENSE) file for details.
 
 ---
 
