@@ -46,7 +46,9 @@ export default function Dashboard({ incidents }) {
         </section>
 
         <section className="panel cpu-panel">
-          <div className="section-head compact"><div><div className="section-kicker">OBSERVABILITY</div><h2>CPU Monitoring</h2></div><Badge tone="green">BELOW THRESHOLD</Badge></div>
+         <Badge tone={avg !== null && avg >= 70 ? "red" : "green"}>
+  {avg !== null && avg >= 70 ? "ABOVE THRESHOLD" : "BELOW THRESHOLD"}
+</Badge>
           <div className="cpu-current"><div><span>Current CPU</span><strong>{avg === null ? "N/A" : avg.toFixed(0)}<small>{avg === null ? "" : "%"}</small></strong></div><div className="cpu-threshold"><span>Alarm threshold</span><strong>70%</strong></div></div>
           <CpuChart values={current?.metrics?.cpu_utilization?.values || []} threshold={70}/>
           <div className="cpu-foot"><span><i className="legend-line blue"></i> CPU utilization</span><span><i className="legend-line red"></i> Alarm threshold</span></div>
