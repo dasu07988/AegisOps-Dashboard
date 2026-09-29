@@ -249,7 +249,7 @@ git clone https://github.com/dasu07988/AegisOps-Dashboard
 Navigate to the project directory:
 
 ```bash
-cd <YOUR_PROJECT_DIRECTORY>
+cd AegisOps-Dashboard
 ```
 
 Install dependencies:
